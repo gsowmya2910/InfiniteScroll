@@ -85,7 +85,6 @@ var employee_table = document.getElementById('dataloded');
     var employee_data = data.split(/\r?\n|\r/);
     rowCount=30;
     var table_data='';
-   // var table_data = '<table class="table table-bordered table-striped">';
     for(var count = 1; count< rowCount; count++)
     {
      var cell_data = employee_data[count].split(",");
@@ -102,21 +101,19 @@ var employee_table = document.getElementById('dataloded');
       }
      }
      table_data += '</tr>';
-    }
-   // table_data +='</table>';  
+    } 
    console.log(table_data);
     $('#dataloded').append(table_data);
-   // $('#employee_table').html(table_data);
   }
   });
-				//employee_table.innerHTML += '<div class="table_data"></div>';
-				}
-				var status = document.getElementById('status');
-			status.innerHTML=contentHeight+" | "+y;
-			}
-			window.onscroll = yHandler;
+				
+}
+var status = document.getElementById('status');
+status.innerHTML=contentHeight+" | "+y;
+}
+window.onscroll = yHandler;
 </script>
-	</body>
+</body>
 </html>
 
 
