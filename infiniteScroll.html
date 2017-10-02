@@ -4,29 +4,34 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="new.js">
   <style type = "text/css">
   div#status{position: fixed; font-size: 24px;right: 50px;}
 
 	</style>
- </head>
- <body>
-  <div class="container">
+  </head>
+  <body>
+  <div class="container-fluid">
    <div class="table-responsive">
    <div id="status"> 0 | 0 </div>
-    <h1 align="center">Displaying CSV File in HTML Table Using AJAX jQuery</h1>
+    <h1 align="center">CSV File to HTML Table Using AJAX jQuery</h1>
     <br />
     <div align="center">
      <button type="button" name="load_data" id="load_data" class="btn btn-info">Load Data</button>
     </div>
     <br />
     <div id="employee_table ">
-      <table id='dataloded' class="table table-bordered table-striped">
+      <table class="table table-bordered">
+	  <tbody id='dataloded' class= "table-responsive" ></tbody>
       </table>
     </div>
    </div>
   </div>
  
+<<<<<<< HEAD
+	</body>
+	 <script src="sample.js"></script>
+</html>
+=======
  
  <script>
 $(document).ready(function(){
@@ -118,3 +123,4 @@ window.onscroll = yHandler;
 
 
 
+>>>>>>> 6fda0d9894f637afbb52fa31afbc1c3a5c3a4bbd
